@@ -1,7 +1,7 @@
 
 resource "aws_security_group" "alb_security_group" {
   name        = "${var.env}-alb_${var.subnets_name}-security_group"
-  description = "${var.env}-alb_${var.subnets_name}_subnet_group"
+  description = "${var.env}-alb_${var.subnets_name}-security_group"
   vpc_id      = var.vpc_id
 
 
